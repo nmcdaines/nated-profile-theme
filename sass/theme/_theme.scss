@@ -1,1 +1,48 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.navbar {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.20);
+  z-index: 99;
+}
+
+#page-banner {
+  width: 100%;
+  background: url('../img/textures/blueprint-pattern-4.jpg');
+
+  // Temp
+  min-height: 400px;
+  position: relative;
+}
+
+.profile-img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #66ACF4;
+  background: #FFF;
+  border-radius: 100%;
+}
+
+#page-banner a {
+  color: #fff;
+}
+
+
+#wrapper-footer {
+  color: #fff;
+  background: url('../img/textures/blueprint-pattern-4.jpg')
+}
+
+#wrapper-footer a {
+  color: #fff;
+}

@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -80,3 +80,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->
+
+  <div id="page-banner">
+    
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-align-center">
+
+            <h1 class=""><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+
+
+          </div>
+          <div class="col-md-4 text-align-center">
+            <div class="profile-img"></div>
+          </div>
+          <div class="col-md-4">
+
+
+          </div>
+        </div>
+      </div>
+
+
+    
+  </div>
