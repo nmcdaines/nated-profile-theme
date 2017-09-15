@@ -16,14 +16,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
+		<footer class="site-footer" id="colophon">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="profile-img"></div>
+				</div>
+				<div class="col-md-8">
+
+				
+
+					
+
+				
+
+			</div><!--col end -->
+
+		</div><!-- row end -->
 
 		<div class="row">
-
 			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
+			<div class="site-info">
 
 							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
 							/* translators:*/
@@ -38,12 +50,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 							/* translators:*/
 								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
 					</div><!-- .site-info -->
+			</div>
+		</div>
 
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
+		</footer><!-- #colophon -->
 
 	</div><!-- container end -->
 
