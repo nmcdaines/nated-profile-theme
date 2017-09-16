@@ -17,13 +17,25 @@
 
 #page-banner {
   width: 100%;
+  padding-top: 56px;
+}
+
+#page-banner h1 {
+  font-weight: bold;
+  font-size: 60px;
+  // margin-bottom: 0;
+}
+
+#page-banner h2 {
+  font-weight: lighter;
+  font-size: 30px;
 }
 
 #page-banner-inner {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
   background: url('../img/textures/blueprint-pattern-4.jpg');
-  height: 300px;
+  // height: 300px;
 }
 
 .profile-img {
@@ -52,15 +64,15 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) { 
   #page-banner-inner {
-    padding-bottom: calc(((540px * 0.3333333) / 2));
+    padding-bottom: calc(((100vw) / 2));
   }
 
   #page-banner-profile {
-    margin-top: calc(((540px * 0.3333333) / 2) * -1 + 15px);
+    margin-top: calc(((100vw) / 2) * -1 + 15px);
   }
 
   .profile-img {
-    height: calc(540px * 0.3333333 - 30px);
+    height: calc(100vw - 30px);
   }  
 }
 
@@ -136,4 +148,8 @@
 
 #wrapper-footer a {
   color: #fff;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  text-decoration: none;
 }
