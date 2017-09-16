@@ -21,6 +21,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+
+  <style type="text/css">
+    .profile-img-inner { 
+			background: url("<?php echo get_theme_mod('understrap_profile_img', ''); ?>"); 
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+  </style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -83,30 +92,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 
   <div id="page-banner">
     
-        
-      <div class="container">
+    <div id="page-banner-inner">
+      <div class="container" style="display: block;">
         <div class="row">
           <div class="col-md-12 text-align-center">
 
             <h1 class=""><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-
-
-          </div>
-          <div class="col-md-4 text-align-center">
-            <div class="profile-img"></div>
-          </div>
-          <div class="col-md-4">
-
+            <h2>Full Stack Developer</h2>
 
           </div>
         </div>
       </div>
+		</div>
+    
+		<div id="page-banner-profile">
+			<div class="container">
+			<div class="row">
+						<div class="col-md-4">
 
 
+						</div>
+						<div class="col-md-4 text-align-center">
+							<div class="profile-img">
+								<div class="profile-img-inner">
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+
+
+						</div>
+					</div>
+			</div>
+		</div>
     
   </div>

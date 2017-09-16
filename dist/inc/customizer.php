@@ -32,6 +32,25 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 	 */
 	function understrap_theme_customize_register( $wp_customize ) {
 
+		$wp_customize->add_section( 'understrap_theme_options', array(
+			'title'       => __( 'Understrap Theme Options', 'understrap' ),
+			'capability'  => 'edit_theme_options',
+			'description' => __( '', 'understrap' ),
+			'priority'    => 150,
+		) );
+
+		$wp_customize->add_setting( 'understrap_profile_img', array(
+			'default'           => '',
+			'transport' => 'refresh',
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'profile_img', array(
+			'label'      => __( 'Upload a Profile Img', 'understrap' ),
+			'section'    => 'understrap_theme_options',
+			'settings'   => 'understrap_profile_img',
+			// 'context'    => 'your_setting_context' 
+		) ) );
+
 		// Theme layout settings.
 		$wp_customize->add_section( 'understrap_theme_layout_options', array(
 			'title'       => __( 'Theme Layout Settings', 'understrap' ),
