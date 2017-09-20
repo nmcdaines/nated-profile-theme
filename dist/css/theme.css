@@ -9134,6 +9134,9 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+html, body {
+  color: #3B91EF; }
+
 * {
   font-family: 'Roboto', sans-serif; }
 
@@ -9231,6 +9234,25 @@ a.skip-link {
 
 h1 a:hover, h2 a:hover, h3 a:hover {
   text-decoration: none; }
+
+h1 {
+  /* font-weight: 300; */
+  /* display: inline-block; */
+  padding-bottom: 5px;
+  position: relative;
+  color: #0D79F4; }
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 4px solid #0D79F4; }
+
+.study-table {
+  color: #393C3E; }
 
 /*
 * Use existing Bootstrap 4 classes and
