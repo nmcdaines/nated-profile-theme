@@ -98,6 +98,16 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		    'before_title'   => '<h3 class="widget-title">', 
 		    'after_title'    => '</h3>', 
 		) );
+		
+		register_sidebar( array(
+			'name'          => __( 'Footer Right', 'understrap' ),
+			'id'            => 'footerright',
+			'description'   => 'Widget area next to profile image in the footer',
+		    'before_widget'  => '<div id="%1$s" class="footer-widget %2$s '. slbd_count_widgets( 'footerright' ) .'">', 
+		    'after_widget'   => '</div><!-- .footer-widget -->', 
+		    'before_title'   => '<h3 class="widget-title">', 
+		    'after_title'    => '</h3>', 
+		) );
 
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

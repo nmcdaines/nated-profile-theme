@@ -25,6 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-md-8">
 					<?php echo do_shortcode('[contact-form-7 id="65" title="Contact Me"]')?>
+					<?php get_sidebar( 'footerright' ); ?>
 				</div><!--col end -->
 
 			</div><!-- row end -->
