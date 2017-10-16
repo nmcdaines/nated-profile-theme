@@ -9,3 +9,20 @@
 // Any additional imported files //
 @import "theme/theme";  // <--------- That's where you can add your own design. Thats your part!
 @import "theme/contact-form7"; // Contact Form 7 - Bootstrap 4 support
+
+.cbp-l-filters-work, cbp-l-filters-button {
+  text-align: left !important;
+}
+
+.cbp-filter-item, .cbp-l-filters-button {
+  border-radius: 4px !important;
+  margin-left: 0 !important;
+  border-color: rgb(236, 236, 236) !important;
+  color: rgb(136, 136, 136) !important;
+}
+
+.cbp-filter-item-active {
+  background-color: rgb(13, 121, 244) !important;
+  border-color: rgb(13, 121, 244) !important;
+  color: #fff !important;
+}
