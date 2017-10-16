@@ -19,45 +19,48 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<footer class="site-footer" id="colophon">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="profile-img"></div>
+					<div class="profile-img">
+						<div class="profile-img-inner"></div>
+					</div>
 				</div>
 				<div class="col-md-8">
+					<?php echo do_shortcode('[contact-form-7 id="65" title="Contact Me"]')?>
+				</div><!--col end -->
 
-				
+			</div><!-- row end -->
 
+			<div class="row">
+				<div class="col-md-12">
 					
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+	</div><!-- container end -->
+</div><!-- wrapper end -->
 
-				
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
+<div class="wrapper">
+	<div class="<?php echo esc_attr( $container ); ?>">
 		<div class="row">
-			<div class="col-md-12">
-			<div class="site-info">
+			<div class="col-md-6">
+				<div class="site-info">
 
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
+							Proudly powered by <a href="https://wordpress.org/">Wordpress</a>
+							<!-- <span> &nbsp; | &nbsp; </span>  -->
+							<br/>
+							Theme based on <a href="https://understrap.com/">Understrap</a>
+							
+				</div><!-- .site-info -->
+			</div>
+			<div class="col-md-6">
+				<div class="pull-right">
+				  Site Designed and Developed by <a href="mailto:nate@thedaines.org">Nathaniel Daines</a>
+				</div>
 			</div>
 		</div>
+	</div>
+</div>
 
-		</footer><!-- #colophon -->
 
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
 

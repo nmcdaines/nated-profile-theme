@@ -38,12 +38,24 @@
   select,
   textarea {
     @extend .form-control;
+    background: rgba(255,255,255,0.8);
+  }
+
+  input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
+    background: #fff;
   }
 
   // submit button, inherit .btn and .btn-outline-primary classes.
   input[type=submit] {
-    @extend .btn;
-    @extend .btn-outline-primary;
+    // @extend .btn;
+    // @extend .btn-outline-primary;
+    @extend .btn-primary;
+    background: #0d79f4;
+    border: 1px solid #fff;
+  }
+
+  textarea {
+    height: 130px;
   }
 
   .wpcf7-form {
@@ -51,12 +63,14 @@
     // set paragraphs to behave like divs with class .form-group
     p {
       @extend .form-group;
+      margin-bottom: 5px;
     }
 
     // let labels be 100%
     label {
       width: 100%;
     }
+
   }
 
   // not valid tip for each control
