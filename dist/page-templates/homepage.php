@@ -18,12 +18,12 @@ endwhile;
  * Custom Scripts go here (outside the quotes)
  */
 
-echo '<script src="' . get_template_directory_uri() . '/src/plugins/skills/main.js' . '"></script>';
+/* echo '<script src="' . get_template_directory_uri() . '/src/plugins/skills/main.js' . '"></script>';
 echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/plugins/skills/main.css' . '" />';
 
 
 echo '<script src="' . get_template_directory_uri() . '/src/plugins/experience/main.js' . '"></script>';
-echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/plugins/experience/main.css' . '" />';
+echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/plugins/experience/main.css' . '" />'; */
 
 
 get_footer();
